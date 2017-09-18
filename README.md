@@ -27,16 +27,19 @@ Write methods with the following names and behavior
    
 - Create a class called `User` that inherits from `Person`.
     - add a protected property called `isAdmin` that is a boolean.
-    - Write the constructor on `User` so that it extends from `Contact` and accepts a 3rd parameter, a boolean of whether or not that user is an administrator. 
+    - Write the constructor on `User` so that it extends from `Contact` and accepts a 3rd parameter, a boolean of whether or not that user is an administrator.
+    - Write a getter and setter for the firstName property as well as a getter and setter for lastName
     - Write a method on the `User` class called `isAdmin()` that returns a boolean if the contact is an administrator.
 
 - Create an interface called `Greeter`. 
     - Greeter interface should specify a method called `sayHello()`.
     - Go to your `Person` class and ensure that it implements the `Greeter` interface.
     - The implementation of `sayHello()` method on Person class should produce "Hello from " + firstName + " " + lastName.
-    
-// Collections (ArrayList, HashMap)
+     
+- On your `Main` class, add a method called `capitalizeRecords` that takes in an ArrayList of Person objects or User objects.
+- `capitalizeRecords` should check to make sure that each Object's firstName and lastName property are capitalized. If they are not, use the setter to capitalize the first letter of each firstName and lastName. 
 
+// we need another problem for HashMaps.
 
 ## Testing
  
