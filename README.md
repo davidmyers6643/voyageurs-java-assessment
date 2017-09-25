@@ -15,7 +15,6 @@
 Write methods with the following names and behavior
 
 - Create a class named `Main` inside of the `src/main/java` folder. Add the following methods:
-    - Create a static method called isNegative() that takes in an object of any data type and returns a boolean whether or not the value is true or false. 
     - Write a static method called square(integer) accepts an integer as input and returns that number times itself.  
     - Write a static method sum() method that works with both integers and doubles (method overloading)
     - Write a static method called average(arrayOfIntegers) that takes in an array of integers and returns the average.
@@ -27,7 +26,7 @@ Write methods with the following names and behavior
    
 - Create a class called `User` that inherits from `Person`.
     - add a protected property called `isAdmin` that is a boolean.
-    - Write the constructor on `User` so that it extends from `Contact` and accepts a 3rd parameter, a boolean of whether or not that user is an administrator.
+    - Write the constructor on `User` so that it extends from `Person` and accepts a 3rd parameter, a boolean of whether or not that user is an administrator.
     - Write a getter and setter for the firstName property as well as a getter and setter for lastName
     - Write a method on the `User` class called `isAdmin()` that returns a boolean if the contact is an administrator.
 
@@ -38,8 +37,9 @@ Write methods with the following names and behavior
      
 - On your `Main` class, add a method called `capitalizeRecords` that takes in an ArrayList of Person objects or User objects.
 - `capitalizeRecords` should check to make sure that each Object's firstName and lastName property are capitalized. If they are not, use the setter to capitalize the first letter of each firstName and lastName. 
+- `capitalizeRecords` should return a copy of the arrayList.
 
-// we need another problem for HashMaps.
+// we need another problem or two for HashMaps.
 
 ## Testing
  
