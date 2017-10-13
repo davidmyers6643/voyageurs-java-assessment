@@ -33,9 +33,9 @@ Write methods with the following names and behavior
     - Write a method on the `User` class called `isAdmin()` that returns a boolean if the contact is an administrator.
 
 - Create an interface called `Greeter`. 
-    - Greeter interface should specify a method called `sayHello()`.
+    - Greeter interface should specify a void method called `sayHello()`.
     - Go to your `Person` class and ensure that it implements the `Greeter` interface.
-    - The implementation of `sayHello()` method on Person class should produce "Hello from `firstName`  `lastName`" using the class properties to display the assigned values.
+    - The implementation of `sayHello()` method on Person class should print in the console "Hello from `firstName`  `lastName`" using the class properties to display the assigned values.
      
 - On your `Assessment` class create a method called `capitalizeRecords`.
     - The method takes in an ArrayList of  User objects. The `capitalizeRecords` method should check to make sure that each Object's firstName and lastName property are capitalized. If they are not, use the setter to capitalize the first letter of each firstName and lastName and the method should return a copy of the arrayList.
