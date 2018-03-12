@@ -1,14 +1,18 @@
 # Java Fundamentals Assessment
 
-## Getting Started
+## Setup
     
-- clone this repo to your projects directory
-- open it in your editor
-- follow the directions specifically.
-- create a branch called your firstname-lastname.
-- write code
-- run tests
-- commit your work and push it to a branch called firstname-lastname where firstname is your first name and lastname is your last name.
+1. Clone this repo to your `IdeaProjects` directory
+1. Open the directory in IntelliJ
+1. Configure IntelliJ
+   - Mark the `src` directory as the sources root (right click on `src` -> "Mark
+     Directory as...")
+   - Configure the project sdk (File -> Project Structure), Choose 1.8 or 9
+1. Create a branch named `firstname-lastname` with your first and last names
+1. Write your code and commit on your branch, but don't push your branch until
+   the assessment is over
+1. When the assessment is over, push your branch to GitHub. Verify that your
+   branch is present on GitHub.
 
 ## Problems
 
@@ -40,9 +44,6 @@ Write methods with the following names and behavior
 - On your `Assessment` class create a method called `capitalizeRecords`.
     - The method takes in an ArrayList of  User objects. The `capitalizeRecords` method should check to make sure that each Object's firstName and lastName property are capitalized. If they are not, use the setter to capitalize the first letter of each firstName and lastName and the method should return a copy of the arrayList.
 
-## Testing
-Soon...
 ## Grading
-Soon...
-## License
-Soon...
+
+A Total of 5 Points are available
