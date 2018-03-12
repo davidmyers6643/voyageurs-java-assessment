@@ -1,7 +1,7 @@
 # Java Fundamentals Assessment
 
 ## Setup
-    
+
 1. Clone this repo to your `IdeaProjects` directory
 1. Open the directory in IntelliJ
 1. Configure IntelliJ
@@ -16,34 +16,66 @@
 
 ## Problems
 
-Write methods with the following names and behavior
+1. Create a class named `Assessment` inside of the `src` directory.
 
-- Create a class named `Assessment` inside of the `src/main/java` folder. Add the following methods:
-    - Write a static method called square(param1) accepts an integer as input and returns that number times itself.  
-    - Write a static method sum(param1, param2) method that works with both integers and doubles (use method overloading) and returns the result.
-    - Write a static method called average(arrayOfIntegers) that takes in an array of integers and returns the average as a double.
-    - You may write a `main` method on this class in order to run code that tests the above methods.
- 
-- Create a class named `Person` inside of `src/main/java`.
-   - Add firstName and lastName as protected properties.
-   - Add a constructor method that takes in two strings that are firstName and lastName.
-   - The firstName and lastName properties cannot be null.
-   - If the firstName or lastName inputs are null, be sure to throw an IllegalArgumentException inside of the constructor.
-   - Write a getter and setter for the firstName property as well as a getter and setter for lastName.
-    
-- Create a class called `User` that inherits from `Person`.
-    - Add a protected property called `isAdmin` that is a boolean.
-    - Write the constructor on `User` so that it extends from `Person` and accepts a 3rd parameter, a boolean of whether or not that user is an administrator.
-    - Write a method on the `User` class called `isAdmin()` that returns a boolean if the contact is an administrator.
+    - Write a static method named `square` that accepts an integer as input and
+      returns that number times itself.
+    - Write a static method named `sum` that accepts two arguments and that works
+      with both integers and doubles (use method overloading) and returns the
+      result of adding the two passed numbers.
+    - Write a static method named `average` that takes in an array of integers
+      and returns the average as a double.
 
-- Create an interface called `Greeter`. 
-    - Greeter interface should specify a method called `sayHello()` that returns a String.
-    - Go to your `Person` class and ensure that it implements the `Greeter` interface.
-    - The implementation of `sayHello()` method on Person class should return the message "Hello from `firstName`  `lastName`" using the class properties to display the assigned values.
-     
-- On your `Assessment` class create a method called `capitalizeRecords`.
-    - The method takes in an ArrayList of  User objects. The `capitalizeRecords` method should check to make sure that each Object's firstName and lastName property are capitalized. If they are not, use the setter to capitalize the first letter of each firstName and lastName and the method should return a copy of the arrayList.
+1. Create a class named `Person` inside of `src`.
+
+   - The class should define two instance properties of type `String` named
+     `firstName`, and `lastName`.
+   - Add a constructor method that takes in two strings and sets the `firstName`
+     and `lastName` properties based on the passed arguments.
+   - If either of the passed `firstName` or `lastName` arguments are `null`, the
+     constructor should throw an `IllegalArgumentException`.
+   - Write a getter and setter for the firstName property as well as a getter
+     and setter for lastName.
+
+1. Create a class named `User` that inherits from `Person`.
+
+    - Add a protected instance property named `isAdmin` that is a boolean.
+    - Write the constructor on `User` so that it extends from `Person` and
+      accepts a 3rd parameter, a boolean of whether or not that user is an
+      administrator.
+    - Write an instance method on the `User` class named `isAdmin()` that
+      returns a boolean if the contact is an administrator.
+
+1. Create an interface named `Greeter`.
+
+    - The Greeter interface should specify a method named `sayHello()` that
+      returns a String.
+	- Change your `Person` class so that it implements the `Greeter` interface.
+    - The implementation of `sayHello()` method on Person class should return
+      the message "Hello from `firstName` `lastName`" using the instance
+      properties to display the assigned values.
+
+- On your `Assessment` class create a method named `capitalizeRecords`.
+
+    This method should:
+
+    - Take in an List of User objects
+    - Check to make sure that each User's firstName and lastName property are
+      capitalized
+    - If they are not, use the setter to capitalize the first letter of each
+      firstName and lastName.
+    - The method should return a list of User objects where each user object's
+      firstName and lastName properties are capitalized.
 
 ## Grading
 
-A Total of 5 Points are available
+A Total of 5 Points are available. One point will be awarded per problem if the
+provided solution fulfills all of the specifications for the problem.
+
+**If a class does not compile, no points can be awarded for it.** It would be
+wise to spend the last ~15 minutes of the assessment ensuring that your code is
+error-free.
+
+You can write a `main` method on any or all of your classes to test the code
+that you have written. The presence or absence of a `main` method will not
+affect your grade.
