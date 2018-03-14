@@ -76,6 +76,8 @@ provided solution fulfills all of the specifications for the problem.
 wise to spend the last ~15 minutes of the assessment ensuring that your code is
 error-free.
 
-You can write a `main` method on any or all of your classes to test the code
-that you have written. The presence or absence of a `main` method will not
-affect your grade.
+## Testing your Code
+
+You can (and are encouraged to) write a `main` method on any or all of your
+classes to test the code that you have written. The presence or absence of a
+`main` method will not affect your grade.
