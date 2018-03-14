@@ -55,7 +55,7 @@
       the message "Hello from `firstName` `lastName`" using the instance
       properties to display the assigned values.
 
-- On your `Assessment` class create a method named `capitalizeRecords`.
+1. On your `Assessment` class create a method named `capitalizeRecords`.
 
     This method should:
 
