@@ -18,44 +18,46 @@
 
 1. Create a class named `Assessment` inside of the `src` directory.
 
-    - Write a static method named `square` that accepts an integer as input and
-      returns that number times itself.
-    - Write a static method named `sum` that accepts two arguments and that works
-      with both integers and doubles (use method overloading) and returns the
-      result of adding the two passed numbers.
-    - Write a static method named `average` that takes in an array of integers
-      and returns the average as a double.
+    - Write a public static method named `square` that accepts an integer as
+      input and returns that number times itself.
+    - Write a public static method named `sum` that accepts two arguments and
+      that works with both integers and doubles (use method overloading) and
+      returns the result of adding the two passed numbers.
+    - Write a public static method named `average` that takes in an array of integers
+      (not a `List`, an array) and returns the average as a double.
 
 1. Create a class named `Person` inside of `src`.
 
    - The class should define two instance properties of type `String` named
-     `firstName`, and `lastName`.
+     `firstName`, and `lastName`. These properties should not be accessible
+     outside of the `Person` class.
    - Add a constructor method that takes in two strings and sets the `firstName`
      and `lastName` properties based on the passed arguments.
    - If either of the passed `firstName` or `lastName` arguments are `null`, the
      constructor should throw an `IllegalArgumentException`.
-   - Write a getter and setter for the firstName property as well as a getter
-     and setter for lastName.
+   - Write a getter and setter for the `firstName` property as well as a getter
+     and setter for `lastName`.
 
 1. Create a class named `User` that inherits from `Person`.
 
-    - Add a protected instance property named `isAdmin` that is a boolean.
-    - Write the constructor on `User` so that it extends from `Person` and
-      accepts a 3rd parameter, a boolean of whether or not that user is an
-      administrator.
-    - Write an instance method on the `User` class named `isAdmin()` that
-      returns a boolean if the contact is an administrator.
+    - Add a protected instance property named `admin` that is a boolean.
+    - Write a constructor on the `User` class that accepts 3 parameters, the
+      first name and last name of the user, as well as a boolean value
+      indicating whether or not that user is an administrator.
+    - Write an instance method on the `User` class named `isAdmin` that accpets
+      no arguments and returns a boolean if the contact is an administrator,
+      based on the `admin` property.
 
 1. Create an interface named `Greeter`.
 
-    - The Greeter interface should specify a method named `sayHello()` that
-      returns a String.
+    - The Greeter interface should specify an instance method named `sayHello`
+      that accepts no arguments and returns a String.
 	- Change your `Person` class so that it implements the `Greeter` interface.
-    - The implementation of `sayHello()` method on Person class should return
+    - The implementation of the `sayHello` method on Person class should return
       the message "Hello from `firstName` `lastName`" using the instance
       properties to display the assigned values.
 
-1. On your `Assessment` class create a method named `capitalizeRecords`.
+1. On your `Assessment` class create a static method named `capitalizeRecords`.
 
     This method should:
 
