@@ -58,8 +58,7 @@
       that accepts no arguments and returns a `String`.
 	- Change your `Person` class so that it implements the `Greeter` interface.
     - The implementation of `sayHello` method on Person class should return
-      the message "Hello from `firstName` `lastName`." using the instance
-      properties to display the assigned values.
+      the message "Hello from `firstName` `lastName`." using the i to display the assigned values.
 
 1. On your `Assessment` class create a static method named `capitalizeRecords`.
 
