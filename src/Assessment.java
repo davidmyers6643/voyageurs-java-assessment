@@ -5,28 +5,14 @@ public class Assessment {
     public static void main(String[] args) {
 
 
-
-
-//		Person person = new Person("joe", "schmoe");
-//		System.out.println(person.getFirstName());
-//		System.out.println(person.getLastName());
-//		System.out.println("Hello" + person.getLastName() + person.getFirstName());
-//		Person nullPerson = new Person(null, "Bob");
-//		System.out.println(nullPerson);
-//
-
-
-
 		Person dude = new Person("joe", "schmoe");
 		System.out.println(dude.sayHello());
-		System.out.println(square(5));
-		System.out.println(sum(5, 5)); //int int
-		System.out.println(sum(6.0, 6.0));// double double
-		System.out.println(sum(6.0, 2)); // double int
+		System.out.println(square(7));
+		System.out.println(sum(8, 4)); //int int
+		System.out.println(sum(7.1, 1.1));// double double
+		System.out.println(sum(6.3, 8)); // double int
 		int[] numberList = {1, 2, 3, 4, 5};
 		System.out.println(average(numberList));
-
-
 
     }
 
